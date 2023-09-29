@@ -1,9 +1,10 @@
 import React from 'react'
+import HeroSection from '../components/core/Homepage/HeroSection'
 
 export default function HomePage() {
   return (
-    <div className='w-screen h-screen bg-gray-950'>
-    <h1 className='text-center text-white  text-5xl '> Coming Soon    </h1>   
+    <div className='w-screen min-h-screen  flex flex-col bg-gray-950 text-white '>
+    <HeroSection/>
     </div>
   )
 }
