@@ -4,7 +4,7 @@ import { createContext } from "react";
 import HomePage from "./page/HomePage";
 import Footer from "./components/common/Footer";
 import Navbar from "./components/common/Navbar";
-
+import "./App.css"
 export const ThemeContext = createContext(null);
 
 export default function App() {
@@ -17,7 +17,7 @@ export default function App() {
 
   return (
     <ThemeContext.Provider value={{ darkmode, toggleTheme }}>
-    <div className="w-screen min-h-screen  flex flex-col font-inter">
+    <div className="app">
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
